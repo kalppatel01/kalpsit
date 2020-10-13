@@ -1,0 +1,247 @@
+/* inspired by
+    https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
+*/
+
+/*
+* Take out stuff that should not print
+*/
+
+.skip,
+.back-to-top,
+.main-nav,
+.contact,
+.hamburger,
+hr {
+  display: none;
+}
+
+/*
+* Make sure elements positioned
+*/
+
+body,
+.hamburger,
+section,
+p,
+article,
+a {
+  position: relative;
+}
+
+/*
+* make logo and page-title sit next to each other
+*/
+
+.logo-container {
+  display: flex;
+  max-width: 14cm;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid var(--main-bg-color);
+  margin-bottom: 0.5cm;
+}
+
+img.logo {
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  max-width: 2cm;
+}
+
+/*
+* Typography
+* Set font to 16pt, set background to white and font to black.
+* This saves ink
+*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 16pt;
+  line-height: 1.5;
+  background: var(--print-bg-color);
+  color: var(--print-font-color);
+}
+
+h1 {
+  font-size: 24pt;
+  color: var(--print-font-color);
+}
+
+h2,
+h3,
+h4 {
+  font-size: 16pt;
+  margin: 0 0.5cm;
+  text-align: left;
+}
+
+p {
+  margin: 0.5cm 1.5cm;
+}
+
+/*
+* hero
+*/
+
+.hero {
+  text-align: center;
+}
+
+.my-picture {
+  max-width: 5cm;
+}
+
+.my-name,
+.my-location {
+  margin: 0;
+}
+
+.content {
+  padding: 0.5cm;
+  max-width: 26cm;
+  margin: 0 auto;
+  margin: 0 1cm;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.iama,
+.my-info {
+  display: inline;
+  margin: 0;
+}
+
+.iama {
+  margin-left: -0.5cm;
+}
+
+.my-info {
+  margin-left: 0;
+}
+
+.my-info::after {
+  content: '';
+  display: block;
+  line-height: 1.8;
+}
+
+/*
+* style gallery & figure
+*/
+
+figure {
+  position: relative;
+}
+
+figure img {
+  max-width: 10cm;
+}
+
+figcaption {
+  display: inline;
+  position: absolute;
+  top: 20%;
+  margin-left: 0.5cm;
+}
+
+/*
+* Style Links
+* set link color and link behaviour
+*/
+
+a:link,
+a:visited,
+a {
+  display: block;
+  background: transparent;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  page-break-inside: avoid;
+}
+
+a[href^='http']:after {
+  content: ' < ' attr(href) ' > ';
+  text-align: center;
+  color: var(--print-font-color);
+}
+
+a:after > img {
+  content: '';
+}
+
+article a[href^='#']:after {
+  content: '';
+}
+
+a:not(:local-link):after {
+  content: ' < ' attr(href) '> ';
+}
+
+a.skip {
+  display: none !important;
+}
+
+/*
+* Define page breaks
+*/
+
+.gallery,
+article {
+  page-break-before: always;
+}
+
+figcaption {
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+
+a {
+  page-break-inside: avoid;
+}
+
+blockquote {
+  page-break-inside: avoid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+img {
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+table,
+pre {
+  page-break-inside: avoid;
+}
+
+ul,
+ol,
+dl {
+  page-break-before: avoid;
+}
+
+/*
+* footer
+*/
+
+.footer {
+  max-width: 14cm;
+  border: 2px solid var(--main-bg-color);
+  margin: 1cm auto;
+  padding: 0.5cm;
+  text-align: center;
+}

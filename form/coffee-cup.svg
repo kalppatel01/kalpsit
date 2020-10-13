@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+  <style>
+    .st4,.st5{clip-path:url(#SVGID_2_);fill:#845021}.st5{fill:#955f26}
+  </style>
+  <path fill="#bfbfbf" fill-opacity="0" d="M0 0h800v600H0z" id="background"/>
+  <g id="cup_of_cofee">
+    <circle cx="353.4" cy="300" r="148.1" fill="#f5f0d9"/>
+    <path fill="none" stroke="#f5f0d9" stroke-width="37" stroke-linecap="round" stroke-miterlimit="10" d="M501.5 300h93.2"/>
+    <defs>
+      <path id="SVGID_1_" d="M479.2 300c0 65.8-50.4 119.8-114.7 125.4-3.7.3-7.4.5-11.1.5-69.5 0-125.9-56.3-125.9-125.9s56.4-125.9 125.9-125.9c3.8 0 7.4.2 11.1.5 64.3 5.6 114.7 59.6 114.7 125.4z"/>
+    </defs>
+    <clipPath id="SVGID_2_">
+      <use xlink:href="#SVGID_1_" overflow="visible"/>
+    </clipPath>
+    <path d="M479.2 300c0 65.8-50.4 119.8-114.7 125.4-3.7.3-7.4.5-11.1.5-69.5 0-125.9-56.3-125.9-125.9s56.4-125.9 125.9-125.9c3.8 0 7.4.2 11.1.5 64.3 5.6 114.7 59.6 114.7 125.4z" clip-path="url(#SVGID_2_)" fill="#845021" stroke="#231f20" stroke-miterlimit="10"/>
+    <path class="st4" d="M479.2 300c0 65.8-50.4 119.8-114.7 125.4-3.7.3-7.4.5-11.1.5-69.5 0-125.9-56.3-125.9-125.9s56.4-125.9 125.9-125.9c3.8 0 7.4.2 11.1.5 64.3 5.6 114.7 59.6 114.7 125.4z"/>
+    <path class="st4" d="M479.2 300c0 65.8-50.4 119.8-114.7 125.4-3.7.3-7.4.5-11.1.5-69.5 0-125.9-56.3-125.9-125.9s56.4-125.9 125.9-125.9c3.8 0 7.4.2 11.1.5 64.3 5.6 114.7 59.6 114.7 125.4z"/>
+    <ellipse class="st5" cx="364.5" cy="300" rx="114.7" ry="125.4"/>
+    <path d="M393.1 161.4c-28.2 6.5-38.2 17.6-34.3 33.2 3.8 15.3 19.3 25.1 34.3 24.3 7.9-.4 15.2 1.6 24.4 13.5 4.3 5.6-1.9 22-8.1 27.8-16.8 15.8-28.6 26.6-19.2 41.9 11.3 18.4 25.2 7.2 34.5 23.2 12.8 21.8-11.9 20.6 0 40.2s29.2 33.7 48.8 29.3 26.1-72.7 26.1-72.7l-41.3-155.3-65.2-5.4z" clip-path="url(#SVGID_2_)" fill="#aa713d"/>
+    <circle class="st5" cx="378.9" cy="197.1" r="8.9"/>
+    <circle class="st5" cx="405.4" cy="210" r="3.9"/>
+    <circle class="st5" cx="400.3" cy="184.4" r="6.5"/>
+    <circle class="st5" cx="438" cy="226.4" r="7.3"/>
+    <circle class="st5" cx="442.5" cy="255.1" r="4.5"/>
+    <circle class="st5" cx="420.1" cy="283.3" r="8.4"/>
+    <circle class="st5" cx="403.5" cy="297.1" r="3.2"/>
+    <circle class="st5" cx="426.3" cy="312.8" r="4.3"/>
+    <circle class="st5" cx="458.6" cy="300.8" r="14.3"/>
+    <circle class="st5" cx="441.2" cy="350.8" r="3.2"/>
+    <circle class="st5" cx="437.3" cy="365.6" r="3.9"/>
+    <circle class="st5" cx="455.6" cy="373.7" r="4.3"/>
+    <circle class="st5" cx="464.8" cy="345.4" r="9.3"/>
+    <radialGradient id="SVGID_3_" cx="353.389" cy="300" r="125.86" gradientUnits="userSpaceOnUse">
+      <stop offset=".958" stop-color="#fff" stop-opacity=".24"/>
+      <stop offset=".96" stop-color="#e9e9e9" stop-opacity=".279"/>
+      <stop offset=".966" stop-color="#acacac" stop-opacity=".394"/>
+      <stop offset=".973" stop-color="#777" stop-opacity=".508"/>
+      <stop offset=".979" stop-color="#4d4d4d" stop-opacity=".619"/>
+      <stop offset=".985" stop-color="#2b2b2b" stop-opacity=".725"/>
+      <stop offset=".99" stop-color="#131313" stop-opacity=".827"/>
+      <stop offset=".996" stop-color="#050505" stop-opacity=".921"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <path d="M479.2 300c0 65.8-50.4 119.8-114.7 125.4-3.7.3-7.4.5-11.1.5-69.5 0-125.9-56.3-125.9-125.9s56.4-125.9 125.9-125.9c3.8 0 7.4.2 11.1.5 64.3 5.6 114.7 59.6 114.7 125.4z" opacity=".39" clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)"/>
+  </g>
+</svg>

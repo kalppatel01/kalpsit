@@ -1,0 +1,250 @@
+/*
+inspired by
+https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf
+*/
+
+/* default styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#main,
+#about-me,
+#gallery,
+#story,
+#blog,
+#contact {
+  outline: none;
+}
+
+header,
+main,
+footer {
+  margin: 0 0.5rem;
+}
+
+.header {
+  padding: 1em 0;
+  background-color: var(--main-bg-color);
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.hamburger {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+img.logo {
+  display: inline-block;
+  margin: 0 0.75vw;
+  border-radius: 0.5rem;
+  background-color: var(--reverse-font-color);
+  padding: 0.5vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.page-title {
+  align-self: center;
+  padding: 0;
+}
+
+.header,
+.hero,
+.footer {
+  margin-top: 0.5rem;
+  border-radius: 1vw;
+  box-shadow: 0 2px 3px var(--invite-bg-color);
+}
+
+picture img {
+  border-radius: 2.5vw;
+  box-shadow: 0 2px 3px var(--invite-bg-color);
+}
+
+/* about-me */
+
+.about-me,
+.gallery,
+.story,
+.contact {
+  padding: 0 0.5vw;
+}
+
+/* styling order for links is link, visted, focus, hover */
+
+.nav-links,
+.logo-link {
+  outline: 2px dashed rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+}
+
+.nav-links {
+  padding: 0.5rem;
+}
+
+.nav-links:focus,
+.nav-links:hover {
+  outline: 2px dashed var(--reverse-font-color);
+}
+
+.logo-link:focus,
+.logo-link:hover {
+  outline: 2px dashed var(--reverse-font-color);
+}
+
+/* back to top */
+
+.back-to-top {
+  height: auto;
+  min-height: 2rem;
+  margin-top: 1rem;
+}
+
+a.back,
+a.back:visited,
+a.back:focus,
+a.back:hover,
+a.back:active {
+  text-decoration: none;
+  color: var(--main-bg-color);
+  padding: 0.5rem;
+  outline: 2px dashed var(--main-bg-color);
+  width: 10rem;
+  transition: background-color 0.5s ease-out;
+}
+
+a.back:focus,
+a.back:hover {
+  outline: 3px dashed var(--main-bg-color);
+  background-color: var(--focus-bg-color);
+}
+
+/* skip link */
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  padding: 1.5rem;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: var(--focus-bg-color);
+  color: currentColor;
+  border-radius: 1rem;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+/*   mobile-first header with hamburger*/
+
+.logo-container {
+  display: flex;
+}
+
+.page-title {
+  color: var(--reverse-font-color);
+  font-size: 2.4rem;
+}
+
+.navbar {
+  padding-bottom: 1rem;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.logo-link {
+  width: auto;
+}
+
+a.nav-links,
+a.logo-link {
+  text-decoration: none;
+  color: var(--reverse-font-color);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: var(--reverse-font-color);
+  font-size: 1.5rem;
+}
+
+.active {
+  display: block;
+}
+
+/*   media query for horizontal navbar */
+
+@media screen and (min-width: 60rem) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 4.5rem;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 2rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 0.5rem;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 1rem;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* end media query for navbar */

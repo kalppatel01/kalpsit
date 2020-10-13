@@ -1,0 +1,31 @@
+/* CSS variables */
+:root {
+  /* main */
+  --main-bg-color: #00728f;
+  --main-font-color: #636363;
+  --reverse-font-color: #fff;
+  --gray-border: 1px solid #ccc;
+  --border-left: 4px solid #f3f3f3;
+
+  /* header */
+  --header-bg-color: #f3f3f3;
+
+  /* box shadow */
+  --default-box-shadow: rgba(0, 0, 0, 0.7);
+
+  /* form */
+  --form-font-color: #333;
+  --form-container: #f2f2f2;
+  --invite-bg-color: #bfbfbf;
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  --select-color: #444;
+  --select-border-color: #aaa;
+
+  --focus-bg-color: #ffffdf;
+  --button-color-light: rgba(19, 134, 19, 0.9);
+  --button-color-bright: rgba(19, 134, 19, 1);
+
+  /* print */
+  --print-font-color: #000;
+  --print-bg-color: #fff;
+}

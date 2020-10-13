@@ -1,0 +1,67 @@
+/* layout.css */
+
+/* change story to 2-column */
+
+.story div {
+  max-width: 90vw;
+  column-width: 26rem;
+  column-gap: 2.5rem;
+  font-size: 1rem;
+  column-rule: 4px solid rgb(253, 251, 251);
+}
+
+.story div p:first-child {
+  margin-top: 0;
+}
+
+/* grids */
+
+
+.form-container {
+  display: grid;
+  justify-content: center;
+}
+
+.form {
+  padding: 1rem;
+}
+
+/* media query mid-sized screen */
+
+@media screen and (min-width: 50rem) {
+  html {
+    font-size: 1rem;
+  }
+
+
+
+
+  /* form layout */
+
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  .invite {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* media query large-sized screen*/
+
+@media screen and (min-width: 80rem) {
+  html {
+    font-size: 1.1rem;
+  }
+
+}
+
+.github {
+  fill: white;
+  margin-left: 1rem;
+  margin-bottom: -0.5rem;
+  width: 1.4rem;
+}
